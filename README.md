@@ -1,18 +1,17 @@
-## Getting Started
+# Práctica de Algoritmos de Busqueda/Ordenamiento
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## 📌 Información General
 
-## Folder Structure
+- *Título: Práctica Listas Enlazadas
+- *Asignatura: Estructura de Datos
+- *Carrera: Computación
+- *Estudiante: Ariel Badillo
+- *Fecha: 10/06/2025
+- *Profesor:* Ing. Pablo Torres
 
-The workspace contains two folders by default, where:
+---
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## 🛠️ Descripción Listas Enlazadas
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- Una lista enlazada es como una cadena de cosas donde cada cosa apunta a la siguiente en si cada nodo guarda un dato y sabe quién viene después. Para agregar algo lo pones al final de la cadena. Para buscar o borrar, vas recorriendo uno por uno hasta encontrar lo que quieres. No necesitas saber cuántos datos habrá, y es fácil agregar o quitar cosas sin mover todo pero si quieres un dato en medio, tienes que recorrer por toda la lista desde el inicio para terminar en si es una forma práctica y sencilla de manejar datos en orden.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).

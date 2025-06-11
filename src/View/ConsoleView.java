@@ -12,7 +12,6 @@ public class ConsoleView {
         scanner = new Scanner(System.in);
     }
 
-    // Muestra el menú y retorna la opción seleccionada
     public int showMenu() {
         System.out.println("\n--- Menú de Agenda ---");
         System.out.println("1. Agregar contacto");
@@ -21,10 +20,9 @@ public class ConsoleView {
         System.out.println("4. Ver todos los contactos");
         System.out.println("5. Salir");
         System.out.print("Seleccione una opción: ");
-        return Integer.parseInt(scanner.nextLine()); // sin try-catch
+        return Integer.parseInt(scanner.nextLine());
     }
 
-    // Pide al usuario los datos del contacto
     public Contact getContactInput() {
         System.out.print("Ingrese el nombre: ");
         String name = scanner.nextLine();
@@ -33,23 +31,23 @@ public class ConsoleView {
         return new Contact(name, phone);
     }
 
-    // Pide al usuario el nombre para buscar o eliminar
+
     public String getNameInput(String action) {
         System.out.printf("Ingrese el nombre del contacto a %s: ", action);
         return scanner.nextLine();
     }
 
-    // Muestra un contacto
+
     public void showContact(Contact contact) {
         System.out.println("Contacto encontrado: " + contact);
     }
 
-    // Muestra un mensaje genérico
+  
     public void showMessage(String message) {
         System.out.println(message);
     }
 
-    // Imprime todos los contactos
+
     public void printAll(ContactManager manager) {
         System.out.println("\n--- Lista de Contactos ---");
         manager.printList();
