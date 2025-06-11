@@ -38,6 +38,11 @@ public class ContactManager {
         }
     }
 
+    public void deleteContact(String name, String phone) {
+        Contact target = new Contact(name, phone);
+        contactos.deleteByValue(target);
+    }
+
     public void printList() {
         contactos.print();
     }
